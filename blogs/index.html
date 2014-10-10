@@ -6,29 +6,27 @@
   <body>
     This is the Higher Logic widget demo site, showing most recent blogs.
 
+<div id="blogs-widget"></div>
+<script type="text/javascript" src="http://api.connectedcommunity.org/widgetscripts/widgets/latestBlog.js"></script>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    hl.latestBlog('blogs-widget', {
+        HLIAMKey:'349f719e-d3a8-47d5-aa42-8fac34c394fa',
+        communityKey:'',
+        maxRecords:'3',
+        subjectLength:'50',
+        contentLength:'160',
+        moreUrl:'http://hug.higherlogic.com/blogs',
+        maxDaysOld:'',
+        showLoginStatus:'1',
+        loginUrl:'http://hug.higherlogic.com/HigherLogic/Security/LoginBounce.aspx?dialog=1',
+        domainUrl:'http://hug.higherlogic.com',
+        useBioBubble:'0',
+        includeStaff:'1'
+    });
+  });
+</script>
 
-
-    <div id="blogs-widget"></div>
-		<script type="text/javascript" src="http://api.connectedcommunity.org/widgetscripts/bioBubble.min.js"></script>
-		<script type="text/javascript" src="http://api.connectedcommunity.org/widgetscripts/widgets/latestBlog.js"></script>
-		<script type="text/javascript">
-		  document.addEventListener('DOMContentLoaded', function() {
-		    hl.latestBlog('blogs-widget', {
-		        HLIAMKey:'349f719e-d3a8-47d5-aa42-8fac34c394fa',
-		        communityKey:'',
-		        maxRecords:'5',
-		        subjectLength:'1000',
-		        contentLength:'250',
-		        moreUrl:'http://hug.higherlogic.com/blogs',
-		        maxDaysOld:'',
-		        showLoginStatus:'1',
-		        loginUrl:'http://hug.higherlogic.com/HigherLogic/Security/LoginBounce.aspx?dialog=1',
-		        domainUrl:'http://hug.higherlogic.com',
-		        useBioBubble:'0',
-		        includeStaff:'1'
-		    });
-		  });
-		</script>
-
+	
   </body>
 </html>

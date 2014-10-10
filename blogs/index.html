@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>HigherLogic Widgets Demo Site</title>
+     	<link rel="stylesheet" type="text/css" href="blogwidget.css">
+  </head>
+  <body>
+    This is the Higher Logic widget demo site, showing most recent blogs.
+
+
+
+    <div id="blogs-widget"></div>
+		<script type="text/javascript" src="http://api.connectedcommunity.org/widgetscripts/bioBubble.min.js"></script>
+		<script type="text/javascript" src="http://api.connectedcommunity.org/widgetscripts/widgets/latestBlog.js"></script>
+		<script type="text/javascript">
+		  document.addEventListener('DOMContentLoaded', function() {
+		    hl.latestBlog('blogs-widget', {
+		        HLIAMKey:'349f719e-d3a8-47d5-aa42-8fac34c394fa',
+		        communityKey:'',
+		        maxRecords:'5',
+		        subjectLength:'1000',
+		        contentLength:'250',
+		        moreUrl:'http://hug.higherlogic.com/blogs',
+		        maxDaysOld:'',
+		        showLoginStatus:'1',
+		        loginUrl:'http://hug.higherlogic.com/HigherLogic/Security/LoginBounce.aspx?dialog=1',
+		        domainUrl:'http://hug.higherlogic.com',
+		        useBioBubble:'1',
+		        includeStaff:'1'
+		    });
+		  });
+		</script>
+
+  </body>
+</html>

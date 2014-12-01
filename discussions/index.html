@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div id="divLatestDiscussionsWidget"></div>
+<script type="text/javascript" src="http://api.connectedcommunity.org/widgetscripts/widgets/latestDiscussion.js"></script>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    hl.latestDiscussion('divLatestDiscussionsWidget', {
+        discussionKey:'',
+        maxToRetrieve:'3',
+        subjectLength:'50',
+        contentLength:'160',
+        moreUrl:'https://hug.higherlogic.com',
+        showLoginStatus:'1',
+        loginUrl:'https://hug.higherlogic.com/HigherLogic/Security/LoginBounce.aspx?dialog=1',
+        domainUrl:'https://hug.higherlogic.com',
+        cbUseBioBubble:'0',
+        includeStaff:'1',
+        HLIAMKey:'349f719e-d3a8-47d5-aa42-8fac34c394fa'
+    });
+  });
+</script>
+
+</body>
+</html>

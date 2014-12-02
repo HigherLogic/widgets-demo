@@ -193,17 +193,10 @@
 <body>
     <h3>Discussion Widget</h3>
 <div id="divLatestDiscussionsWidget"></div>
+<script type="text/javascript" src="https://api.connectedcommunity.org/widgetscripts/widgets/latestDiscussion.js"></script>
 <script type="text/javascript">
-document.addEventListener('DOMContentLoaded', function() {
-var widgetSrc = document.location.protocol + '//api.connectedcommunity.org/widgetscripts/widgets/latestDiscussion.js';
-var widgetLoader = function ( src, callback ) {
-  var s = document.createElement( 'script' );
-  s.setAttribute( 'src', src );
-  document.body.appendChild( s );
-  callback();
-  };
-    widgetLoader(widgetSrc, function() {
-        hl.latestDiscussion('divLatestDiscussionsWidget', {
+    document.addEventListener('DOMContentLoaded', function() {
+      hl.latestDiscussion('divLatestDiscussionsWidget', {
             discussionKey:'',
             maxToRetrieve:'3',
             subjectLength:'50',
@@ -218,8 +211,6 @@ var widgetLoader = function ( src, callback ) {
         });
     });
 
-    
-  });
 </script>
 <h3>Library List Widget</h3>
 <div id="divLibraryListWidget"></div>

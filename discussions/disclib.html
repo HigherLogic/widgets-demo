@@ -191,15 +191,16 @@
 	</style>
 </head>
 <body>
+    <script type="text/javascript" src="https://api.connectedcommunity.org/widgetscripts/widgets/libraryList.js"></script>
+    <script type="text/javascript" src="https://api.connectedcommunity.org/widgetscripts/widgets/latestDiscussion.js"></script>
     <h3>Discussion Widget</h3>
 <div id="divLatestDiscussionsWidget"></div>
 
 <h3>Library List Widget</h3>
 <div id="divLibraryListWidget"></div>
-<script type="text/javascript" src="https://api.connectedcommunity.org/widgetscripts/widgets/libraryList.js"></script>
-<script type="text/javascript" src="https://api.connectedcommunity.org/widgetscripts/widgets/latestDiscussion.js"></script>
+
 <script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', function() {
+  document.onLoad(function() {
     hl.libraryList('divLibraryListWidget', {
         libraryNameLength:50,
         descriptionLength:50,

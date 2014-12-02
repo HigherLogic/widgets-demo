@@ -194,14 +194,15 @@
     <h3>Discussion Widget</h3>
 <div id="divLatestDiscussionsWidget"></div>
 <script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
 var widgetSrc = document.location.protocol + '//api.connectedcommunity.org/widgetscripts/widgets/latestDiscussion.js';
-var widgetLoader = function ( src ) {
+var widgetLoader = function ( src, callback ) {
   var s = document.createElement( 'script' );
   s.setAttribute( 'src', src );
   document.body.appendChild( s );
   };
-  widgetLoader(widgetSrc);
-  document.addEventListener('DOMContentLoaded', function() {
+  widgetLoader(widgetSrc, callback);
+
     hl.latestDiscussion('divLatestDiscussionsWidget', {
         discussionKey:'',
         maxToRetrieve:'3',

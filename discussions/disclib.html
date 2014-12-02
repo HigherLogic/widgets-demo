@@ -193,8 +193,14 @@
 <body>
     <h3>Discussion Widget</h3>
 <div id="divLatestDiscussionsWidget"></div>
-<script type="text/javascript" src="https://api.connectedcommunity.org/widgetscripts/widgets/latestDiscussion.js"></script>
 <script type="text/javascript">
+var widgetSrc = document.location.protocol + '//api.connectedcommunity.org/widgetscripts/widgets/latestDiscussion.js';
+var widgetLoader = function ( src ) {
+  var s = document.createElement( 'script' );
+  s.setAttribute( 'src', src );
+  document.body.appendChild( s );
+  }
+  widgetLoader(widgetSrc);
   document.addEventListener('DOMContentLoaded', function() {
     hl.latestDiscussion('divLatestDiscussionsWidget', {
         discussionKey:'',

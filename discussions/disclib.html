@@ -193,28 +193,11 @@
 <body>
     <h3>Discussion Widget</h3>
 <div id="divLatestDiscussionsWidget"></div>
-<script type="text/javascript" src="https://api.connectedcommunity.org/widgetscripts/widgets/latestDiscussion.js"></script>
-<script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function() {
-      hl.latestDiscussion('divLatestDiscussionsWidget', {
-            discussionKey:'',
-            maxToRetrieve:'3',
-            subjectLength:'50',
-            contentLength:'160',
-            moreUrl:'https://hug.higherlogic.com',
-            showLoginStatus:'1',
-            loginUrl:'https://hug.higherlogic.com/HigherLogic/Security/LoginBounce.aspx?dialog=1',
-            domainUrl:'https://hug.higherlogic.com',
-            cbUseBioBubble:'0',
-            includeStaff:'1',
-            HLIAMKey:'349f719e-d3a8-47d5-aa42-8fac34c394fa'
-        });
-    });
 
-</script>
 <h3>Library List Widget</h3>
 <div id="divLibraryListWidget"></div>
 <script type="text/javascript" src="https://api.connectedcommunity.org/widgetscripts/widgets/libraryList.js"></script>
+<script type="text/javascript" src="https://api.connectedcommunity.org/widgetscripts/widgets/latestDiscussion.js"></script>
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function() {
     hl.libraryList('divLibraryListWidget', {
@@ -233,6 +216,19 @@
         showDownloadCount:1,
         moreUrlText:'More'
     });
+     hl.latestDiscussion('divLatestDiscussionsWidget', {
+            discussionKey:'',
+            maxToRetrieve:'3',
+            subjectLength:'50',
+            contentLength:'160',
+            moreUrl:'https://hug.higherlogic.com',
+            showLoginStatus:'1',
+            loginUrl:'https://hug.higherlogic.com/HigherLogic/Security/LoginBounce.aspx?dialog=1',
+            domainUrl:'https://hug.higherlogic.com',
+            cbUseBioBubble:'0',
+            includeStaff:'1',
+            HLIAMKey:'349f719e-d3a8-47d5-aa42-8fac34c394fa'
+        });
   });
 </script>
 

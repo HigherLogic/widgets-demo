@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	                                        .hl-widget.latest-discussion {
+                                        width: 370px;
+                                        padding: 5px;
+                                        }
+
+                                        .hl-widget.latest-discussion,
+                                        .hl-widget.latest-discussion #login-information-container{
+                                        background-color: #3276b1;
+                                        }
+
+                                        .hl-widget.latest-discussion #login-information-container{
+                                        float: right;
+                                        padding: 5px 10px;
+                                        margin-right: -5px;
+                                        color: #fff;
+                                        border-bottom-left-radius: 5px;
+                                        border-bottom-right-radius: 5px;
+                                        }
+
+                                        .hl-widget.latest-discussion #login-information-container a {
+                                        color: #ddd;
+                                        }
+
+                                        .hl-widget.latest-discussion #login-information-container .error-message {
+                                        color: #cc0000;
+                                        }
+
+                                        .hl-widget.latest-discussion .container{
+                                        background-color: white;
+                                        font: 13px/1.22 arial,helvetica,clean,sans-serif;
+                                        overflow: auto;
+                                        padding: 0 10px;
+                                        }
+
+                                        .hl-widget.latest-discussion ul{
+                                        padding-left: 0;
+                                        }
+
+                                        .hl-widget.latest-discussion li {
+                                        list-style-type: none;
+                                        padding-bottom: .5em;
+                                        margin-bottom: .5em;
+                                        border-bottom: dotted 1px #afb1b3;
+                                        padding: 10px;
+                                        }
+
+                                        .hl-widget.latest-discussion .item-image-container{
+                                        float: left;
+                                        width: 60px;
+                                        height: 60px;
+                                        padding-top: 2px;
+                                        }
+
+                                        .hl-widget.latest-discussion .item-title-container{
+                                        margin-top: 2px;
+                                        }
+
+                                        .hl-widget.latest-discussion .item-title-container a{
+                                        text-decoration: none;
+                                        font-weight: bold;
+                                        font-size: 1.1em;
+                                        font-family: arial;
+                                        }
+
+                                        .hl-widget.latest-discussion .item-by-line-container{
+                                        color: #808080;
+                                        font-style: italic;
+                                        margin-top: 2px;
+                                        }
+
+                                        .hl-widget.latest-discussion .item-by-line-container span{
+                                        font-size: 0.85em;
+                                        }
+
+                                        .hl-widget.latest-discussion .item-posted-in-container{
+                                        color: #808080;
+                                        margin-top: 2px;
+                                        }
+
+                                        .hl-widget.latest-discussion .item-posted-in-container span{
+                                        font-size: 0.85em;
+                                        }
+
+                                        .hl-widget.latest-discussion .item-body-container{
+                                        margin-top: 15px;
+                                        }
+
+                                        .hl-widget.latest-discussion .footer-container{
+                                        margin: 0px 10px;
+                                        }
+
+                                        .hl-widget.latest-discussion .footer-item-more{
+                                        float: left;
+                                        }
+
+                                        .hl-widget.latest-discussion .footer-item-post{
+                                        float: right;
+                                        }
+
+                                        .hl-widget.latest-discussion .footer-item-more,
+                                        .hl-widget.latest-discussion .footer-item-post{
+                                        padding-bottom: 10px;
+                                        }
+
+                                        .hl-widget .error-message{
+                                        color: #cc0000;
+                                        padding: 10px;
+                                        }
+                                    
+	</style>
+</head>
+<body>
+<div id="previewWidget"></div>
+<script type="text/javascript" src="http://api.connectedcommunity.org/widgetscripts/widgets/hlwidgetcommon.js"></script>
+<script type="text/javascript" src="http://api.connectedcommunity.org/widgetscripts/widgets/latestDiscussion.js"></script>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    hl.latestDiscussion('previewWidget', {
+        discussionKey:'',
+        maxToRetrieve:'3',
+        subjectLength:'50',
+        contentLength:'160',
+        moreUrl:'https://hlsandbox2.higherlogic.com',
+        showLoginStatus:'1',
+        loginUrl:'https://hlsandbox2.higherlogic.com/HigherLogic/Security/LoginBounce.aspx?dialog=1',
+        domainUrl:'https://hlsandbox2.higherlogic.com',
+        cbUseBioBubble:'0',
+        includeStaff:'1',
+        HLIAMKey:'b73979a8-e52d-4bbc-83ac-1f9b04cd189c'
+    });
+  });
+</script>
+
+</body>
+</html>
